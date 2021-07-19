@@ -2,6 +2,7 @@
 //  font-family: "Open Sans", sans-serif;
 //  font-family: "Source Sans Pro", sans-serif;
 //}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -54,6 +55,7 @@
 }
 .footer-top {
   display: flex;
+  margin-bottom: 24px;
   &__title {
     font-family: Open Sans;
     font-weight: 800;
@@ -112,5 +114,86 @@
     font-size: 14px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.8);
+  }
+}
+.footer-bottom {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  &__link {
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+.info {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+  }
+  &__article {
+    width: 773px;
+    font-family: Source Sans Pro;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+    padding: 20px 99px 45px 25px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  &__article-title,
+  &__box-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #203538;
+    margin-bottom: 20px;
+  }
+  &__block {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__block-title {
+    font-weight: 600;
+    color: rgba(32, 53, 56, 0.9);
+    margin-bottom: 8px;
+  }
+  &__block-description {
+    font-weight: 400;
+    color: rgba(32, 53, 56, 0.9);
+  }
+  &__article-link {
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #03a06c;
+  }
+  &__box {
+    width: 377px;
+    padding: 20px 13px 40px 25px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    font-family: Source Sans Pro;
+  }
+  &__box-title {
+    max-width: 227px;
+  }
+  &__list-item {
+    font-weight: 600;
+    font-size: 14.5px;
+    line-height: 28px;
+    color: rgba(32, 53, 56, 0.9);
+    margin-bottom: 5px;
+  }
+  &__box-link {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #03a06c;
   }
 }

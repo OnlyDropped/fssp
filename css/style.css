@@ -68,6 +68,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 24px;
 }
 
 .footer-top__title {
@@ -137,5 +138,105 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-bottom {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-bottom__link {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.info {
+  padding: 40px 0;
+}
+
+.info__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__article {
+  width: 773px;
+  font-family: Source Sans Pro;
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+  padding: 20px 99px 45px 25px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.info__article-title, .info__box-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #203538;
+  margin-bottom: 20px;
+}
+
+.info__block {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.info__block-title {
+  font-weight: 600;
+  color: rgba(32, 53, 56, 0.9);
+  margin-bottom: 8px;
+}
+
+.info__block-description {
+  font-weight: 400;
+  color: rgba(32, 53, 56, 0.9);
+}
+
+.info__article-link {
+  margin-top: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #03a06c;
+}
+
+.info__box {
+  width: 377px;
+  padding: 20px 13px 40px 25px;
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  font-family: Source Sans Pro;
+}
+
+.info__box-title {
+  max-width: 227px;
+}
+
+.info__list-item {
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 28px;
+  color: rgba(32, 53, 56, 0.9);
+  margin-bottom: 5px;
+}
+
+.info__box-link {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #03a06c;
 }
 /*# sourceMappingURL=style.css.map */
