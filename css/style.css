@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -6,6 +7,10 @@
 
 .header {
   padding: 10px 0 12px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+  -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .header__inner {
@@ -238,5 +243,199 @@
   font-size: 16px;
   line-height: 20px;
   color: #03a06c;
+}
+
+.content {
+  padding: 30px 0 40px;
+}
+
+.content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-inner__info {
+  width: 849px;
+  font-family: Source Sans Pro;
+}
+
+.content-inner__tab {
+  -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.content-inner__tab-info > select {
+  width: 460px;
+  background: #ffffff;
+  border: 1.5px solid rgba(65, 65, 65, 0.3);
+  border-radius: 8px;
+  padding: 25px 30px 25px 25px;
+}
+
+.content-inner__tab-btn {
+  width: 304px;
+  border: 1px solid #03a06c;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 16px;
+  cursor: pointer;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  color: #03a06c;
+}
+
+.content-inner__info-title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  color: #203538;
+  margin-bottom: 30px;
+}
+
+.content-inner__gibdd {
+  background: -webkit-gradient(linear, left top, right top, from(#d4fc79), to(#03a06c));
+  background: linear-gradient(90deg, #d4fc79 0%, #03a06c 100%);
+  border-radius: 8px;
+}
+
+.content-inner__content {
+  width: 300px;
+}
+
+.content-inner__block {
+  font-family: Source Sans Pro, sans-serif;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #03a06c;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 12px 16px 41px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-inner__block > img {
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.content-inner__box-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #203538;
+  margin-bottom: 5px;
+}
+
+.content-inner__box-tex {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #596d7b;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.content-inner__tab-content {
+  width: 209px;
+}
+
+.tabs > input[type="radio"] {
+  display: none;
+}
+
+.tabs > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3,
+#tab-btn-4:checked ~ #content-4 {
+  display: block;
+  width: 100%;
+  padding: 30px 40px 40px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 20px;
+}
+
+.tabs > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.7);
+  background: #f6f6f6;
+  border-radius: 0px;
+  padding: 18px 0;
+}
+
+.tabs > label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs > input[type="radio"]:checked + label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  line-height: 150%;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #4d4d4d;
+}
+
+.content-inner__tab-info > input[type="text"] {
+  width: 460px;
+  background: #ffffff;
+  border: 1.5px solid rgba(65, 65, 65, 0.3);
+  border-radius: 8px;
+  padding: 25px 16px;
+}
+
+.content-inner__tab-info > input[type="date"] {
+  width: 304px;
+  background: #ffffff;
+  border: 1.5px solid rgba(65, 65, 65, 0.3);
+  border-radius: 8px;
+  padding: 25px 16px;
 }
 /*# sourceMappingURL=style.css.map */
