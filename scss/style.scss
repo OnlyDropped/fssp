@@ -1,0 +1,116 @@
+//body {
+//  font-family: "Open Sans", sans-serif;
+//  font-family: "Source Sans Pro", sans-serif;
+//}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  padding: 10px 0 12px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+  }
+  &__title {
+    max-width: 298px;
+    font-size: 22px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 16px;
+  }
+  &__info {
+    margin-left: auto;
+  }
+  &__info-text {
+    max-width: 238px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 6px;
+    text-align: right;
+  }
+  &__info-link {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    width: max-content;
+    margin-left: auto;
+  }
+  &__user {
+    margin-left: 30px;
+    display: flex;
+  }
+}
+
+.footer {
+  background: #f6f6f6;
+  padding: 32px 0 62px;
+}
+.footer-top {
+  display: flex;
+  &__title {
+    font-family: Open Sans;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+  }
+  &__items:first-child {
+    width: 368px;
+    margin-right: 21px;
+  }
+  &__items:nth-child(2) {
+    width: 286px;
+    margin-right: 45px;
+  }
+  &__items-list:nth-child(2) {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 138.27%;
+  }
+  &__items-list:nth-child(3) {
+    width: 291px;
+  }
+  &__items-address {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 149.8%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+  }
+  &__items-email {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #03a06c;
+  }
+  &__items-item {
+    margin-bottom: 10px;
+  }
+  &__items-link {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 149.8%;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  &__items-text {
+    padding-top: 30px;
+    max-width: 363px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
