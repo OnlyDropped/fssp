@@ -5,13 +5,13 @@ $(function () {
 
   $('.slider').slick({
     dots: false,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 3600,
+        breakpoint: 360,
         settings: {
           dots: true,
           arrows: false,
