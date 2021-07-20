@@ -526,3 +526,196 @@
     color: rgba(32, 53, 56, 0.9);
   }
 }
+@media screen and (max-width: 360px) {
+  .header {
+    padding: 14px 0px;
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 10px;
+    }
+    &__info {
+      display: none;
+    }
+  }
+  .content {
+    padding: 20px 0px;
+  }
+  .content-inner {
+    flex-direction: column;
+    &__info {
+      width: 280px;
+    }
+    &__info-title {
+      max-width: 278px;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 20px;
+    }
+    &__gibdd {
+      width: 345px;
+      border-radius: 0;
+      transform: translateX(-15px);
+      margin-bottom: 15px;
+    }
+    &__gibdd-box {
+      background-image: none;
+      background-image: url("../img/gibdd/iPhoneSmal.png");
+    }
+    &__gibdd-item {
+      background-image: none;
+      background-image: url("../img/gibdd/rublSmall.svg");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: bottom;
+    }
+    &__info-title {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 6px;
+    }
+    .tabs {
+      display: flex;
+      flex-direction: column;
+    }
+    &__tab-info {
+      display: flex;
+      flex-direction: column;
+    }
+    &__tabs {
+      width: 330px;
+    }
+    &__tab-info > input[type="text"] {
+      width: 280px;
+      padding: 15px 10px;
+      background: rgba(3, 160, 108, 0.07);
+      border-radius: 6px;
+    }
+    &__tab-info > input[type="date"] {
+      width: 280px;
+      padding: 15px 10px;
+      background: rgba(3, 160, 108, 0.07);
+      border-radius: 6px;
+    }
+    .jq-selectbox__select {
+      width: 280px;
+      border: 1.5px solid rgba(65, 65, 65, 0.3);
+      padding: 25px 30px 25px 25px;
+      background: rgba(3, 160, 108, 0.07);
+      border-radius: 6px;
+    }
+    &__tab-btn {
+      width: 280px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 14px 0;
+    }
+    .tabs > label {
+      width: 280px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #4d4d4d;
+      position: inherit;
+    }
+    .gibdd-inner {
+      padding: 0;
+      &__info {
+        padding-top: 20px;
+        padding-left: 27px;
+        padding-bottom: 86px;
+      }
+      &__info-title {
+        font-size: 19px;
+      }
+      &__list {
+        display: none;
+      }
+      &__qr {
+        display: none;
+      }
+    }
+  }
+  .slide {
+    padding: 10px 0px;
+    &__link {
+      margin-bottom: 10px;
+      line-height: 150%;
+      background-color: inherit;
+    }
+  }
+  .slider {
+    &__item-box img {
+      display: none;
+    }
+    &__item-box {
+      background: #000000;
+      background-image: url("../img/box.png");
+      background-position: bottom;
+      background-position-y: center;
+      width: 320px;
+      height: 150px;
+      padding: 0;
+    }
+    .slick-dots li button {
+      background-color: rgb(0, 0, 0);
+      color: #000;
+      font-size: 0px;
+      padding: 0;
+      width: 6px;
+      height: 6px;
+      border: none;
+      border-radius: 50%;
+      cursor: auto;
+    }
+  }
+  .info {
+    padding: 30px 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &__article {
+      width: 320px;
+      padding-left: 0px;
+      width: 320px;
+      background: inherit;
+      border-radius: 0px;
+      margin-right: 0px;
+    }
+    &__article-title {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+    .info__block {
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 20px;
+      width: 320px;
+    }
+    &__box {
+      width: 320px;
+      padding-left: 0px;
+      background: inherit;
+      border-radius: 0px;
+      margin-right: 0px;
+    }
+  }
+  .footer {
+    padding: 30px 0px 38px;
+  }
+  .footer-top {
+    flex-direction: column;
+    &__title {
+      font-size: 20px;
+    }
+    &__items:first-child {
+      width: 328px;
+      margin-right: 21px;
+    }
+    &__items-text {
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
