@@ -9,6 +9,7 @@
   padding: 0 15px;
 }
 .header {
+  border-top: 20px solid #03a06c;
   padding: 10px 0 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
@@ -489,7 +490,6 @@
     font-size: 16px;
     line-height: 20px;
     color: #03a06c;
-    background-color: #d4fc79;
     display: block;
     margin-left: auto;
     width: fit-content;
@@ -528,9 +528,32 @@
     line-height: 20px;
     color: rgba(32, 53, 56, 0.9);
   }
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+  }
+  .slick-prev {
+    transform: translateY(-85px);
+    position: absolute;
+    z-index: 4;
+  }
+  .slick-next {
+    right: 10px;
+    position: absolute;
+    transform: translateY(-85px);
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
 }
 @media screen and (max-width: 360px) {
   .header {
+    border-top: 5px solid #03a06c;
     padding: 14px 0px;
     &__title {
       font-size: 16px;
