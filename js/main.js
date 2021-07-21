@@ -12,10 +12,9 @@ $(function () {
     autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
-
     responsive: [
       {
-        breakpoint: 360,
+        breakpoint: 359,
         settings: {
           dots: true,
           arrows: false,
@@ -25,5 +24,4 @@ $(function () {
       }
     ]
   });
-
 });
