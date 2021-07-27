@@ -14,7 +14,7 @@ $(function () {
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 359,
+        breakpoint: 360,
         settings: {
           dots: true,
           arrows: false,
